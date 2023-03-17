@@ -1,0 +1,385 @@
+*{
+    text-transform: capitalize;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  /* Home Page starts */
+  
+  .flex{
+    display: flex;
+    justify-content: space-around;
+    color: lightcoral; 
+  }
+  .flex h1{
+    margin-top: 30px;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header{
+    background: url(1711.jpg) center center/cover;
+    height: fit-content;
+    min-height: 100%;
+    min-height: 100vh;
+  }
+  
+  .landing{
+    color: white;
+    text-align: right;
+    margin-top: 650px;
+    font-size: 70px;
+    font-weight: lighter;
+  }
+  .landing span{
+    font-size: 70px;
+    padding-right: 1500px;
+    color: white;
+    font-weight: lighter;
+  }
+  
+  .navbar {
+    width : 17vw;
+    }
+    
+  .navbar ul {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    }
+    
+  .navbar li {
+    width: 128px;
+    Height: 85px;
+    list-style: none;
+    overflow: hidden;
+    
+    }
+    
+  .navbar li > span {
+    display : flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition : 0.8s;
+    }
+    
+  .navbar li > span:nth-child(1) {
+    color: lightcoral;
+    background-color: rgba (255, 255, 255, 0.5);
+    }
+    
+  .navbar li:hover span {
+    transform: translateY(-100%);
+  }
+    
+  .navbar li > span:nth-child(2) {
+    background-color: rgba(255, 182, 193, 0.245);
+    text-decoration: none;
+    }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    }
+    
+  .user , .bars{
+    padding-right: 12px;
+  }
+  .icons a{
+    color: cyan;
+    padding-top: 10px;
+    font-size: 25px;
+  }
+  
+  .icons{
+    margin-top: 18px;
+  }
+  
+  .icons{
+    margin-right: 25px;
+  }
+  
+  /* Home Page ends */
+  
+  /* Reviews starts */
+  
+  .review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .review .box-container .box{
+    flex:1 1 300px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.1);
+    border-radius: 10px;
+    padding:30px 20px;
+    position: static;
+    border:2px solid rgba(0,0,0,.1);
+  }
+  
+  .review .box-container .box .fa-quote-right{
+    position: static; 
+    margin-top: 15px;
+    bottom:33px; right: 33px;
+    font-size: 66px;
+    color:#eee;
+  }
+  
+  .review .box-container .box .stars i{
+    color: hotpink;
+    font-size: 22px;
+  }
+  
+  .review .box-container .box p{
+    color:#999;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-top: 22px;
+  }
+  
+  .review .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+  }
+  
+  .review .box-container .box .user h3{
+    font-size: 20px;
+    color:#333;
+  }
+  
+  .review .box-container .box .user span{
+    font-size: 18px;
+    color:#999;
+  }
+  
+  .review .box-container .box .user img{
+    height: 120px;;
+    width: 120px;
+    margin-top: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .review h1{
+    color: darkmagenta;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+  .heading span{
+    color: #999;
+  }
+  
+  /* Reviews ends */
+  
+  /* Footer starts */
+  
+  .footer{
+    background-color: #eee;
+  }
+  .footer .box-container{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .footer .box-container .box{
+    flex: 1 1 7rem;
+  }
+  
+  .footer .box-container .box h3{
+    color:#333;
+    font-size: 24px;
+    padding: 11px 0;
+  }
+  
+  .footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 15px;
+    padding: 10px 0;
+  }
+  
+  .footer .box-container .box a:hover{
+    color: hotpink;
+    text-decoration: underline;
+  }
+  
+  .footer .box-container .box  img{
+    margin-top: 10px;
+  }
+  
+  .footer .credit{
+    text-align: center;
+    padding: 18px;
+    margin-top: 18px;
+    padding-top: 28px;
+    font-size: 20px;
+    color:#333;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding-bottom: 95px;
+  }
+  
+  .footer .credit span{
+    color: darkmagenta;
+  }
+  
+  /* Footer Ends */
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding:0 5px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  
+  .rows {
+    margin: 0 5px;
+  }
+  
+  /* Clear floats after the columns */
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  
+  /* Responsive columns */
+  
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 36px;
+    text-align: center;
+    background-color: white;
+    color: hotpink;
+  }
+  .card:hover{
+    color:white;
+    background-color: hotpink;
+  }
+  
+  .fa {font-size:60px;}
+  
+  .about .row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+  }
+  
+  .about .row .video-container{
+    flex:1 1 40rem;
+    position: relative;
+  }
+  
+  .about .row .video-container video{
+    width:100%;
+    border:1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .about .row .video-container h3{
+    position: absolute;
+    top:50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background:#fff;
+    width:100%;
+    padding:1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+  }
+  
+  .about .row .content{
+    flex:1 1 40rem;
+  }
+  
+  .about .row .content h3{
+    font-size: 3rem;
+    color:#333;
+  }
+  
+  .about .row .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+  }
+  
+  .about h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 44px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Media Queries */
+  
+  /* Home Page starts */
+  
+  @media all and (max-width : 1200px ) {
+  
+    .navbar li {
+      width: 15px;
+      Height: 45px;
+    }
+  
+    .navbar li > span:nth-child(1){
+      font-size: 15px;
+    }
+  
+  }
+  
+  @media all and (min-width : 1201px ) {
+  
+    .navbar li > span:nth-child(1){
+      font-size: 22px;
+    }
+  
+  }
+  
+  @media all and (max-width : 600px ) {
+  
+    .navbar {
+      width : 28vw;
+      height: 15vw;
+      }
+  
+    .navbar li > span:nth-child(1){
+      font-size: 18px;
+    }
+  
+  }
+  
+  /* Home Page ends */
